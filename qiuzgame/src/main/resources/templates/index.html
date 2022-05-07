@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="static :: html_head">
+</head>
+
+<body class="bg-dark">
+<div class="container h-100 d-flex">
+    <div class="jumbotron mx-auto my-auto">
+        <h1 class="display-4">Üdvözöljünk Quiz játék oldalunkon!</h1>
+        <h3 class="text-center my-3">A folytatáshoz jelentkezzen be!</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn btn-dark btn-radius" th:href="@{/registration.html}" role="button"><h2>Regisztráció</h2></a>
+                </div>
+                <div class="col text-center">
+                    <a class="btn btn-dark btn-radius" th:href="@{/login.html}" role="button"><h2>Bejelentkezés</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="static :: footer">
+</div>
+</body>
+</html>
