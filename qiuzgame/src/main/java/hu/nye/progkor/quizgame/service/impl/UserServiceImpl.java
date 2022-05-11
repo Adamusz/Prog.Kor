@@ -1,29 +1,20 @@
 package hu.nye.progkor.quizgame.service.impl;
 
-import hu.nye.progkor.quizgame.model.Question;
 import hu.nye.progkor.quizgame.model.User;
-import hu.nye.progkor.quizgame.repository.QuestionRepository;
 import hu.nye.progkor.quizgame.repository.UserRepository;
-import hu.nye.progkor.quizgame.service.QuizGameService;
+import hu.nye.progkor.quizgame.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author Békési Ádám
+ * @date 2022-05-11
+ **/
 @Service
 @AllArgsConstructor
-public class QuizGameServiceImpl implements QuizGameService {
+public class UserServiceImpl implements UserService {
 
-    private final QuestionRepository questionRepository;
     private final UserRepository userRepository;
-
-    @Override
-    public Question getQuestion(Long id) {
-        return questionRepository.getById(id);
-    }
-
-    @Override
-    public Question createQuestion(Question question) {
-        return questionRepository.save(question);
-    }
 
     @Override
     public User getUser(Long id) {

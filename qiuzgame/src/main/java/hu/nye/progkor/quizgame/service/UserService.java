@@ -1,13 +1,12 @@
 package hu.nye.progkor.quizgame.service;
 
-import hu.nye.progkor.quizgame.model.Question;
 import hu.nye.progkor.quizgame.model.User;
 
-public interface QuizGameService {
-
-    Question getQuestion(Long id);
-
-    Question createQuestion(Question question);
+/**
+ * @author Békési Ádám
+ * @date 2022-05-11
+ **/
+public interface UserService {
 
     User getUser(Long id);
 
