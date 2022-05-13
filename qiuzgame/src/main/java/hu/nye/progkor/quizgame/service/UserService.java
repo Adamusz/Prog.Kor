@@ -1,5 +1,8 @@
 package hu.nye.progkor.quizgame.service;
 
+import java.util.List;
+import java.util.Optional;
+
 import hu.nye.progkor.quizgame.model.User;
 
 /**
@@ -8,9 +11,13 @@ import hu.nye.progkor.quizgame.model.User;
  **/
 public interface UserService {
 
-    User getUser(Long id);
+  List<User> getAllUser();
 
-    User createUser(User user);
+  Optional<User> getUser(Long id);
 
-    User updateUser(Long id, User updatedUser);
+  User createUser(User user);
+
+  User updateUser(Long id, User user);
+
+  void deleteUser(Long id);
 }
