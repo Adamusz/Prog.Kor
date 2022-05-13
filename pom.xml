@@ -16,7 +16,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>quizgame</name>
-    <description>Catalog application for FactSite</description>
+    <description>Catalog application for QuizGame</description>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
