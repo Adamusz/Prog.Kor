@@ -30,14 +30,14 @@ jobs:
     - name: Build and publish with Maven
       run: |
         # Versioning setup
-        version_prefix=`mvn help:evaluate -Dexpression=project.version --quiet -DforceStdout --file quizgame/pom.xml | awk -F. '{print $1"."$2}'`
+        version_prefix=`mvn help:evaluate -Dexpression=project.version --quiet -DforceStdout --file pom.xml | awk -F. '{print $1"."$2}'`
         version="$version_prefix.${{github.run_number}}-$GITHUB_SHA"
         echo "Setting artifact version to $version"
         # Push version to env
         echo "ARTIFACT_VERSION=$version" >> $GITHUB_ENV
         # Overwrite local artifact version
-        mvn -B versions:set -DnewVersion="$version" --file quizgame/pom.xml
-        mvn -B deploy --file quizgame/pom.xml
-        cp "quizgame/target/quizgame-${version}.jar" "quizgame/target/quizgame.jar"
+        mvn -B versions:set -DnewVersion="$version" --file pom.xml
+        mvn -B deploy --file pom.xml
+        cp "target/quizgame-${version}.jar" "target/quizgame.jar"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
