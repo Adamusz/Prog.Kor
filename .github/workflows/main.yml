@@ -37,6 +37,6 @@ jobs:
         # Overwrite local artifact version
         mvn -B versions:set -DnewVersion="$version" --file pom.xml
         mvn -B deploy --file pom.xml
-        cp "target/quizgame-${version}.jar" "target/quizgame.jar"
+        cp "target/quizegame-${version}.jar" "target/quizegame.jar"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
