@@ -11,8 +11,8 @@
         <relativePath/>
     </parent>
 
-    <groupId>nye.hu.progkor</groupId>
-    <artifactId>qiuzgame</artifactId>
+    <groupId>progkor</groupId>
+    <artifactId>qiuzegame</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>quizgame</name>
