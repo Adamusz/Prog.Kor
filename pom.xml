@@ -196,7 +196,7 @@
 		<repository>
 			<id>github</id>
 			<name>githubpackages</name>
-			<url>https://maven.pkg.github.com/Adamusz/Prog.Kor</url>
+			<url>https://maven.pkg.github.com/adamusz/prog.kor</url>
 		</repository>
 	</distributionManagement>
 </project>
