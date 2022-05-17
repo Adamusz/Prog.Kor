@@ -33,7 +33,7 @@ public class QuestionServiceImpl implements QuestionService {
   @Override
   public Question updateQuestion(Long id, Question question) {
     final Question oldQuestion = questionRepository.findById(id).get();
-    oldQuestion.setQuestion(question.getQuestion());
+    oldQuestion.setQuestionName(question.getQuestionName());
     oldQuestion.setAnswer(question.getAnswer());
     return questionRepository.save(oldQuestion);
   }

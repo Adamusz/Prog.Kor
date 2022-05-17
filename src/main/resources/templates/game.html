@@ -6,13 +6,13 @@
 <body class="bg-dark">
 <div class="container h-100 d-flex">
     <div class="jumbotron mx-auto my-auto">
-        <h3 class="text-center">Kérdés szövege például: miért köcsög itt mindenki?</h3>
+        <h3 class="text-center" th:text="TODO"></h3>
         <div class="container">
             <div class="col py-3">
-                <input type="text" class="form-control" placeholder="Válaszod ide írd">
+                <input type="text" class="form-control" placeholder="Válaszod ide írd" disabled>
             </div>
             <div class="col text-center">
-                <a class="btn btn-dark btn-radius btn-lg" href="#" role="button">Küldés</a>
+                <a class="btn btn-dark btn-radius btn-lg disabled" href="#" role="button" >Küldés</a>
             </div>
         </div>
     </div>
